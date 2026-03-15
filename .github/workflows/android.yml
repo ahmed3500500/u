@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: TelegramCallNotifier/TelegramCallNotifier
+        working-directory: TelegramCallNotifier
     steps:
     - uses: actions/checkout@v4
 
@@ -40,5 +40,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: TelegramCallNotifier/TelegramCallNotifier/app/build/outputs/apk/debug/app-debug.apk
+        path: TelegramCallNotifier/app/build/outputs/apk/debug/app-debug.apk
         if-no-files-found: error
